@@ -11,7 +11,7 @@ public class Bot extends TelegramLongPollingBot {
         SendMessage sendMessage = new SendMessage().setChatId(update.getMessage().getChatId());
 
         if (update.getMessage().getText().equals("Привет")){
-            sendMessage.setText("Доброго времени суток");
+            sendMessage.setText("Покеда");
             try{
                 execute(sendMessage);
             }
